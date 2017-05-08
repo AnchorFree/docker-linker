@@ -19,6 +19,3 @@ done
 
 # clean up broken symlinks
 find -L $SYMLINK_BASE_PATH -type l -delete
-
-# clean up old symlinks
-ls ${SYMLINK_BASE_PATH} | grep -E '\-.{12}\.log$' | xargs rm -f
